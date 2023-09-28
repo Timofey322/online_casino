@@ -98,15 +98,13 @@ textarea:focus{
     color: #fff;
     
 }
-.input_file { 
+ .input_file { 
 	position: relative;
 	display: inline-block;
     margin-left: 16px;
     margin-bottom: 60px;
 }
 .input_file span {
-	position: relative;
-	display: inline-block;
 	cursor: pointer;
 	outline: none;
 	text-decoration: none;
@@ -123,17 +121,17 @@ textarea:focus{
 	height: 26px;
 	border: none;
 }
+.input_file span:hover{
+    color:#05AC6A;
+}
 .input_file input[type=file] {
+    cursor: pointer;
 	position: absolute;
-	z-index: -1;
-	opacity: 0;
-	display: block;
-	width: 0;
-	height: 0;
+	z-index: 1;
+	/* opacity: 0; */
+	display: none;
 }
 
-
-/* Disabled */
 .input_file input[type=file]:disabled + span {
 	background-color: #eee;
 }

@@ -1,0 +1,52 @@
+.input_file { 
+	position: relative;
+	display: inline-block;
+    margin-left: 16px;
+    margin-bottom: 60px;
+}
+.input_file span {
+	cursor: pointer;
+	outline: none;
+	text-decoration: none;
+	color: #000;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 22px;
+	height: 26px;
+	border: none;
+}
+.input_file span:hover{
+    color:#05AC6A;
+}
+.input_file input[type=file] {
+    cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	display: none;
+}
+.input_file input[type=file]:disabled + span {
+	background-color: #eee;
+    display: none;
+}
+.input_file input {
+	background-color: #eee;
+    display: none;
+}
+.input_file__btn{
+    cursor: pointer;
+    text-align: center;
+    border: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 16px;
+    background-color: #C93131;
+    transform: rotate(90deg);
+    color: #fff;
+}

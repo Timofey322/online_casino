@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './controlledform.css';
 import { useState } from 'react';
+// import {FileInput} from './FileInput/FileInput'
 
 export function ControlledForm() {
     const [formVisible, setFormVisible] = useState(true);
@@ -22,8 +23,9 @@ export function ControlledForm() {
                   <input className={styles.input} type="email"  required name="e-mail" placeholder="Электронная почта"/>
                   <textarea className={styles.textarea} name="message"  placeholder="Напишите текст обращения"></textarea>
                   <button className={styles.question_btn} onClick={hideForm}>?</button>
-                  <label htmlFor="myfile" className={styles.input_file}>
-                    <input type="file" name="file"/>		
+                  {/* <FileInput/> */}
+                  <label  className={styles.input_file}>
+                    <input type="file" id="input__file"/>		
                     <span>или прикрепите файл</span>
                   </label>
                   <div className={styles.basement}>
