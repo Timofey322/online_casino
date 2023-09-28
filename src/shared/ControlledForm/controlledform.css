@@ -1,7 +1,8 @@
 .module{
     max-width: 32.70833333333333vw; /*width: calc((628/1920)vw); */
-    width: 518px;
-    min-height: 738px; 
+    width: 628px;
+    box-sizing: border-box;
+    height: 803px; 
     margin-left: auto;
     margin-right: auto;
     border-radius: 16px;
@@ -13,6 +14,7 @@
 .module__title{
     /* max-width: 330px; */
     margin-bottom: 16px;
+    height: 26px;
     color: #000;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -88,7 +90,7 @@ textarea:focus{
     width: 24px;
     height: 24px;
     position: absolute;
-    top:  390px;
+    top:  399px;
     right: 12px;
     border-radius: 12px;
     border: 0;
@@ -184,10 +186,16 @@ input:not(:placeholder-shown)::placeholder {
 }
 .checkbox__input {
     position: absolute;
+    display: flex;
+    align-items: center;
     opacity: 0;
     cursor: pointer;
     height: 0;
     width: 0;
+}
+.checkbox__checkmark{
+    display: flex;
+    align-items: center;
 }
 .checkbox__input:checked ~ .checkbox__checkmark {
     background-color: #05AC6A;
@@ -204,10 +212,10 @@ input:not(:placeholder-shown)::placeholder {
   /* .checkbox:hover input ~ .checkbox__body {
     color: #05AC6A;
   } */
-.checkbox .checkbox__checkmark {
+.checkbox__checkmark {
     vertical-align: middle;
     position: absolute;
-    top: 1px;
+    top: 1rem;
     left: 0;
     width: 14px;
     height: 14px;
@@ -244,6 +252,7 @@ span{
     transition: color 0.25s ease;
 }
 .checkbox__body{
+    text-wrap: nowrap;
     color: #000;
     text-align: center;
     font-family: 'Roboto';

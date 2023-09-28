@@ -39,7 +39,7 @@ module.exports= {
       use:['file-loader']
     },
     {
-      test:/\.(woff|woff2)$/,
+      test:/\.(woff|woff2|ttf)$/,
       use:['file-loader']
     },
   {
